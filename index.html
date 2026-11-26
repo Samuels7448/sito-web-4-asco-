@@ -1,48 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-<title>Page Title</title>
-<style>
-h1 {text-align: center;}
-img {img-align: center;}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futsal Shoes - Store</title>
 
+<!-- Importazione del font moderno "Poppins" da Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Impostazioni generali e font */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #222831;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  /* Contenitore principale per tenere tutto ordinato al centro */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Intestazione (Header) */
+  header {
+    background-color: #1e272e;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #0be881;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .sottotitolo {
+    color: #0be881;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-top: 5px;
+  }
+
+  /* Regola corretta per centrare TUTTE le immagini */
+  img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    text-align: center;
+    color: #1e272e;
+    font-size: 1.8em;
+    margin-top: 40px;
+    border-bottom: 2px solid #0be881;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .titolo-sezione {
+    text-align: center;
+  }
+
+  .descrizione {
+    text-align: center;
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 1.05em;
+    color: #485460;
+  }
+
+  /* Griglia per i prodotti */
+  .prodotti-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  /* Stile delle singole schede prodotto */
+  .prodotto-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .prodotto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .prodotto-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 15px auto 0 auto;
+    box-shadow: none;
+  }
+
+  .nome-scarpa {
+    font-weight: 700;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .prezzo {
+    display: inline-block;
+    background-color: #0be881;
+    color: #1e272e;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.95em;
+  }
+
+  /* Sezione vantaggi */
+  .vantaggi-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .vantaggi-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .vantaggi-list li {
+    background-color: #f4f6f9;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    border-left: 4px solid #0be881;
+  }
 </style>
 </head>
-<body style="background-color:Ivory";>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="prodotti.html">Prodotti</a>
-</nav>
+<body>
 
-<h1>Futsal Shoes</h1>
-<img src="https://editorial.uefa.com/resources/02a1-1fb24e8f7ced-d2fb920b0c7c-1000/format/wide1/slovenia_v_spain_-_uefa_under-19_futsal_euro_2025_group_b.jpeg?imwidth=2048"	width="200">
-<h2>Futal is better.</h2>
+<header>
+  <h1>Futsal Shoes</h1>
+  <div class="sottotitolo">Futsal is better.</div>
+</header>
 
+<div class="container">
 
-<p> La nostra attività vuole far calzare il miglior prodotto di scarpe da futsal ad ogni giocatore che si affidata ai nostri prodotti,noi siamo italiani,ma riusciamo a vendere in ogni parte del mondo.<p/>
-<h2>I nostri prodotti</h2><ul>
-  <li>Lunar gato (green military) Prezzo: 96.00€</li>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7ZC2GGsM_9HcC8ewkF6JNGuTF_m-DNXhpQz-Y5wtqk1aZHcbeShNliUk&s=10"	width="150">
-  <li>React gato (colorazione Bluy grey) Prezzo: 110.00€</li>
-  <img src="https://www.futbolemotion.it/imagesarticulos/232409/750/zapatilla-nike-react-gato-dusty-cactus-barely-volt-0.webp"	width="150">
-  <li>Lunar gato (colorazione red bload) Prezzo: 110.00€</li>
-  <img src="https://www.nike.sa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwf1a37eb3/nk/ef5/d/7/d/d/9/ef5d7dd9_a911_43b5_ba28_6d312b53bd6f.jpg?sw=700&sh=700&sm=fit&q=100&strip=false"	width="150">
-  <li>Ginka  (a/g) prezzo: 74.00€</li> <img src="https://sneakersfutsal.com/cdn/shop/files/IMG-8851_99c94e56-70cb-476a-b4ee-916feb89828d.jpg?v=1783010902&width=1100"	width="150">
-</ul>
- 
- <h2>Perchè scegliere noi</h2>
- <p>Sgeli noi per la nostra qualità e velocita per avere un prodtto di altissima fascia sul mercato</p>
- <h2>I nostri prodotti</h2><ul>
-  <li>Quaità alta</li>
-  <li>Prezzi in base alla nostra qualità</li>
-  <li>Spedizone veloce</li>
-</ul>
- 
-<img src="https://www.futbolemotion.it/imagescontenidos/lanzamientos/nike-futsal/banner-202305.jpg"
- 	width="250">
+  <img src="https://editorial.uefa.com/resources/02a1-1fb24e8f7ced-d2fb920b0c7c-1000/format/wide1/slovenia_v_spain_-_uefa_under-19_futsal_euro_2025_group_b.jpeg?imwidth=2048" width="550" alt="Partita di Futsal">
 
+  <p class="descrizione">
+    La nostra attività vuole far calzare il miglior prodotto di scarpe da futsal ad ogni giocatore che si affida ai nostri prodotti. Noi siamo italiani, ma riusciamo a vendere in ogni parte del mondo.
+  </p>
 
+  <div class="titolo-sezione">
+    <h2>I nostri prodotti</h2>
+  </div>
+
+  <ul class="prodotti-grid">
+    <li class="prodotto-card">
+      <span class="nome-scarpa">Lunar Gato (Green Military)</span>
+      <span class="prezzo">96,00 €</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7ZC2GGsM_9HcC8ewkF6JNGuTF_m-DNXhpQz-Y5wtqk1aZHcbeShNliUk&s=10" alt="Lunar Gato Green">
+    </li>
+
+    <li class="prodotto-card">
+      <span class="nome-scarpa">React Gato (Blue Grey)</span>
+      <span class="prezzo">110,00 €</span>
+      <img src="https://www.futbolemotion.it/imagesarticulos/232409/750/zapatilla-nike-react-gato-dusty-cactus-barely-volt-0.webp" alt="React Gato">
+    </li>
+
+    <li class="prodotto-card">
+      <span class="nome-scarpa">Lunar Gato (Red Blood)</span>
+      <span class="prezzo">110,00 €</span>
+      <img src="https://www.nike.sa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwf1a37eb3/nk/ef5/d/7/d/d/9/ef5d7dd9_a911_43b5_ba28_6d312b53bd6f.jpg?sw=700&sh=700&sm=fit&q=100&strip=false" alt="Lunar Gato Red">
+    </li>
+
+    <li class="prodotto-card">
+      <span class="nome-scarpa">Ginka (A/G)</span>
+      <span class="prezzo">74,00 €</span>
+      <img src="https://sneakersfutsal.com/cdn/shop/files/IMG-8851_99c94e56-70cb-476a-b4ee-916feb89828d.jpg?v=1783010902&width=1100" alt="Ginka">
+    </li>
+  </ul>
+
+  <div class="vantaggi-box">
+    <h2>Perché scegliere noi</h2>
+    <p class="descrizione">Scegli noi per la nostra qualità e velocità per avere un prodotto di altissima fascia sul mercato.</p>
+    
+    <ul class="vantaggi-list">
+      <li>✓ Qualità alta</li>
+      <li>✓ Prezzi in base alla qualità</li>
+      <li>✓ Spedizione veloce</li>
+    </ul>
+  </div>
+
+  <img src="https://www.futbolemotion.it/imagescontenidos/lanzamientos/nike-futsal/banner-202305.jpg" width="600" alt="Banner Nike Futsal">
+
+</div>
 
 </body>
 </html>
-

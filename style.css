@@ -1,6 +1,6 @@
 /* FILE: style.css */
 body {
-    background-color: #fdf2f6;
+    background-color: #f2f5fa;
     font-family: Georgia, serif;
     color: #2b2b2b;
     max-width: 1100px;
@@ -9,20 +9,20 @@ body {
 }
 
 h1 {
-    color: #9c2754;
+    color: #1b365d;
     text-align: center;
 }
 
 h2 {
-    color: #b83b6b;
+    color: #2b5082;
 }
 
 h3 {
-    color: #7a1c40;
+    color: #10233e;
 }
 
 nav {
-    background-color: #9c2754;
+    background-color: #1b365d;
     padding: 15px;
     border-radius: 8px;
 }
@@ -35,14 +35,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd1e3;
+    color: #c2d6f0;
 }
 
 .prodotto {
     background-color: #ffffff;
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #e6c3d0;
+    border: 1px solid #c5d1e3;
     border-radius: 10px;
 }
 
@@ -54,7 +54,7 @@ nav a:hover {
 
 .pulsante {
     display: inline-block;
-    background-color: #9c2754;
+    background-color: #1b365d;
     color: #ffffff;
     padding: 12px 20px;
     border-radius: 8px;
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .pulsante:hover {
-    background-color: #7a1c40;
+    background-color: #10233e;
 }
 
 footer {

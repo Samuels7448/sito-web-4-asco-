@@ -1,0 +1,195 @@
+/* =========================================
+   1. VARIABILI GLOBALI (Modifica qui i colori)
+   ========================================= */
+:root {
+  --colore-primario: #2563eb;       /* Blu moderno */
+  --colore-primario-hover: #1d4ed8; /* Blu più scuro al passaggio del mouse */
+  --sfondo-pagina: #f8fafc;         /* Grigio chiarissimo riposante */
+  --sfondo-card: #ffffff;           /* Bianco puro per i riquadri */
+  --testo-principale: #1e293b;      /* Grigio molto scuro (meglio del nero puro) */
+  --testo-secondario: #64748b;      /* Grigio per sottotitoli e dettagli */
+  --bordo-leggero: #e2e8f0;
+  
+  --font-principale: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --raggio-bordi: 12px;
+  --ombra-leggera: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --ombra-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   2. RESET E IMPOSTAZIONI DI BASE
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-principale);
+  background-color: var(--sfondo-pagina);
+  color: var(--testo-principale);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   3. TIPOGRAFIA E LINK
+   ========================================= */
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--testo-principale);
+  margin-bottom: 0.75rem;
+}
+
+h1 { font-size: clamp(2rem, 4vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h3 { font-size: 1.25rem; }
+
+p {
+  margin-bottom: 1rem;
+  color: var(--testo-secondario);
+}
+
+a {
+  color: var(--colore-primario);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--colore-primario-hover);
+}
+
+/* =========================================
+   4. LAYOUT E CONTENITORI
+   ========================================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Griglia automatica responsive per card o articoli */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* =========================================
+   5. NAVBAR (Barra di navigazione)
+   ========================================= */
+header {
+  background-color: var(--sfondo-card);
+  border-bottom: 1px solid var(--bordo-leggero);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--testo-principale);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--colore-primario);
+}
+
+/* =========================================
+   6. COMPONENTI (Card, Pulsanti, Form)
+   ========================================= */
+.card {
+  background-color: var(--sfondo-card);
+  border: 1px solid var(--bordo-leggero);
+  border-radius: var(--raggio-bordi);
+  padding: 1.5rem;
+  box-shadow: var(--ombra-leggera);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ombra-hover);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--colore-primario);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: var(--colore-primario-hover);
+  color: #ffffff;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Campi di input moderni */
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--bordo-leggero);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--colore-primario);
+}
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--bordo-leggero);
+  color: var(--testo-secondario);
+  font-size: 0.9rem;
+}

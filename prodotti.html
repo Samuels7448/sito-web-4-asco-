@@ -1,34 +1,288 @@
-<!DOCTYPE html> 
-<html lang="it"> 
-  <head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo Futsal Sneakers</title>
-    <style> :root { --primary-color: #1e293b; --accent-color: #2563eb; --bg-color: #f8fafc; --card-bg: #ffffff;
-                   --text-main: #334155; --text-muted: #64748b; --border-color: #e2e8f0; }
-      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color:)
- 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo Futsal Sneakers</title>
+  <style>
+    :root {
+      --primary-color: #1e293b;
+      --accent-color: #2563eb;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #334155;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+    }
 
-        (--bg-color); color: (--text-main); margin: 0; padding: 20; line-height: 1.5; } 
-      .container { max-width: 1000; margin: 0 auto; background:
-        (--card-bg); padding: 30; border-radius: 12; box-shadow: 0 4 6 -1  (0, 0, 0, 0.1), 0 2 4 -1 (0, 0, 0, 0.06); } 
-      header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15; margin-bottom: 25; padding-bottom: 20; border-bottom: 2 solid
-        (--border-color); } h1 { margin: 0; color: (--primary-color); font-size: 1.75; }
-      .search-box { padding: 10 15; border: 1 solid (--border-color); border-radius: 8; font-size: 0.95; width: 250; outline: none; transition: border-color 0.2; } 
-      .search-box:focus { border-color:(--accent-color); } .table-responsive { overflow-x: auto; } table { width: 100; border-collapse: collapse; text-align: left; }
-      th { background-color; #f1f5f9; color: (--primary-color); font-weight: 600; padding; 14px; 16px; font-size: 0.85; text-transform: uppercase; letter-spacing: 0.05
-; border-bottom; 2px ;solid var(--border-color); } td { padding; 14px ;16px; border-bottom: 1px solid var(--border-color); vertical-align: middle; } tbody tr:hover { background-color: #f8fafc; } 
-      .product-name { font-weight: 600; color; var(--primary-color); } .badge { display: inline-block; padding;4px ;10px; font-size: 0.75; font-weight: 600; border-radius; 9999px; background-color;
-  #dbeafe; color; #1e40af; } 
-      .qty { font-weight: 600; text-align: center; } .price-cost { color; var(--text-muted); font-variant-numeric: tabular-nums;  
-                                                                  .price-retail { font-weight: 700; color;#059669; font-size: 1.05;rem; font-variant-numeric: tabular-nums; } ;media (max-width; 600px) { .container { padding; 15px; } .search-box { width; 100%; } }
-                                                                  </style> </head> <body> <div class="container"> 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="prodotti.html">Prodotti</a>
-</nav>
-                                                                    <header> <div> <h1>Catalogo Futsal Sneakers</h1>
-                                                                      <p style="margin; 5px 0 0; color; var(--text-muted); font-size: 0.9rem;">Listino prodotti disponibili</p>
-                                                                    </div> 
-                                                                      <input type="text" id="searchInput" class="search-box" placeholder="Cerca modello o colore..."> </header> <div class="table-responsive"> <table id="catalogTable"> <thead> <tr> <th>Modello / Colorazione</th> <th style="text-align: center;">Quantità</th> <th>Categoria</th> <th>Prezzo Base / Costo</th> <th>Prezzo al Pubblico</th> </tr> </thead> <tbody> <tr> <td class="product-name">Lunar Gato (Blu Military)</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 45,60</td> <td class="price-retail">€ 90,70</td> </tr> <tr> <td class="product-name">React Gato (Blue Grey)</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 78,00</td> <td class="price-retail">€ 110,00</td> </tr> <tr> <td class="product-name">React Gato (Red)</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 67,00</td> <td class="price-retail">€ 110,00</td> </tr> <tr> <td class="product-name">New Balance 442 (White)</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 45,00</td> <td class="price-retail">€ 99,00</td> </tr> <tr> <td class="product-name">Joma Gruma</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 60,00</td> <td class="price-retail">€ 130,00</td> </tr> <tr> <td class="product-name">Joma Luao</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 70,00</td> <td class="price-retail">€ 115,00</td> </tr> <tr> <td class="product-name">Lunar Gato (Beige)</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 58,00</td> <td class="price-retail">€ 96,00</td> </tr> <tr> <td class="product-name">Lunar Gato (Red Blood)</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 59,00</td> <td class="price-retail">€ 95,00</td> </tr> <tr> <td class="product-name">Lunar Gato (Green)</td> <td class="qty">1</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 61,00</td> <td class="price-retail">€ 89,00</td> </tr> <tr> <td class="product-name">Ginka (A/G)</td> <td class="qty">2</td> <td><span class="badge">Futsal sneakers</span></td> <td class="price-cost">€ 46,00</td> <td class="price-retail">€ 74,00</td>
-                                                                      </tr> </tbody> </table> </div> </div> <script> // Filtro di ricerca rapido document.getElementById('searchInput').addEventListener('keyup', function() { const filter = this.value.toLowerCase(); const rows = document.querySelectorAll('#catalogTable tbody tr'); rows.forEach(row => { const text = row.textContent.toLowerCase(); row.style.display = text.includes(filter) ? '' : 'none'; }); });
-                                                                      </script> </body> </html> 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      margin: 0;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    nav {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-right: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--primary-color);
+      font-size: 1.75rem;
+    }
+
+    .subtitle {
+      margin: 5px 0 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .search-box {
+      padding: 10px 15px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      width: 250px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box:focus {
+      border-color: var(--accent-color);
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 14px 16px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    th.text-center {
+      text-align: center;
+    }
+
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+
+    tbody tr:hover {
+      background-color: #f8fafc;
+    }
+
+    .product-name {
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 9999px;
+      background-color: #dbeafe;
+      color: #1e40af;
+    }
+
+    .qty {
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .price-cost {
+      color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .price-retail {
+      font-weight: 700;
+      color: #059669;
+      font-size: 1.05rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      .search-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav aria-label="Navigazione principale">
+      <a href="index.html">Home</a>
+      <a href="prodotti.html">Prodotti</a>
+    </nav>
+
+    <header>
+      <div>
+        <h1>Catalogo Futsal Sneakers</h1>
+        <p class="subtitle">Listino prodotti disponibili</p>
+      </div>
+      <form role="search" onsubmit="return false;">
+        <input type="search" id="searchInput" class="search-box" placeholder="Cerca modello o colore..." aria-label="Cerca modello o colore">
+      </form>
+    </header>
+
+    <main>
+      <section aria-label="Tabella listino prezzi">
+        <div class="table-responsive">
+          <table id="catalogTable">
+            <thead>
+              <tr>
+                <th scope="col">Modello / Colorazione</th>
+                <th scope="col" class="text-center">Quantità</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Prezzo Base / Costo</th>
+                <th scope="col">Prezzo al Pubblico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="product-name">Lunar Gato (Blu Military)</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 45,60</td>
+                <td class="price-retail">€ 90,70</td>
+              </tr>
+              <tr>
+                <td class="product-name">React Gato (Blue Grey)</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 78,00</td>
+                <td class="price-retail">€ 110,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">React Gato (Red)</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 67,00</td>
+                <td class="price-retail">€ 110,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">New Balance 442 (White)</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 45,00</td>
+                <td class="price-retail">€ 99,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">Joma Gruma</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 60,00</td>
+                <td class="price-retail">€ 130,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">Joma Luao</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 70,00</td>
+                <td class="price-retail">€ 115,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">Lunar Gato (Beige)</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 58,00</td>
+                <td class="price-retail">€ 96,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">Lunar Gato (Red Blood)</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 59,00</td>
+                <td class="price-retail">€ 95,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">Lunar Gato (Green)</td>
+                <td class="qty">1</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 61,00</td>
+                <td class="price-retail">€ 89,00</td>
+              </tr>
+              <tr>
+                <td class="product-name">Ginka (A/G)</td>
+                <td class="qty">2</td>
+                <td><span class="badge">Futsal sneakers</span></td>
+                <td class="price-cost">€ 46,00</td>
+                <td class="price-retail">€ 74,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Futsal Sneakers Store - Tutti i diritti riservati</p>
+    </footer>
+  </div>
+</body>
+</html>
